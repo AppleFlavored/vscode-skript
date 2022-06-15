@@ -1,11 +1,9 @@
-import { workspace, ExtensionContext } from 'vscode';
-
-import {} from 'vscode-languageclient/node';
+import { ExtensionContext } from 'vscode';
 
 export function activate(context: ExtensionContext) {
     
 }
 
 export function deactivate() {
-    
+
 }

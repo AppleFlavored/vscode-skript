@@ -1,9 +1,9 @@
 {
-    "name": "skriptinsight-vscode",
-    "displayName": "Skript Language Support",
+    "name": "skript",
+    "displayName": "Skript",
     "version": "1.0.0",
     "author": "AppleFlavored",
-    "license": "MIT",
+    "license": "GPL-3.0",
     "main": "./out/extension",
     "repository": {
         "type": "git",
@@ -18,6 +18,7 @@
         "watch": "tsc -b -w"
     },
     "dependencies": {
+        "jdk-utils": "^0.4.3",
         "vscode-languageclient": "^8.0.1"
     },
     "devDependencies": {
@@ -32,6 +33,7 @@
         "languages": [
             {
                 "id": "skript",
+                "aliases": ["Skript"],
                 "extensions": [
                     ".sk"
                 ],

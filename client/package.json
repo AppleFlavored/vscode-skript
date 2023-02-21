@@ -1,0 +1,15 @@
+{
+    "name": "skriptvsc-client",
+    "version": "0.1.0",
+    "author": "AppleFlavored",
+    "license": "GPL-3.0",
+    "dependencies": {
+        "vscode-languageclient": "^8.1.0"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.75.1"
+    },
+    "engines": {
+        "vscode": "^1.63.0"
+    }
+}

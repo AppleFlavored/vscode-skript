@@ -1,0 +1,10 @@
+{
+    "name": "skriptvsc-server",
+    "version": "0.1.0",
+    "author": "AppleFlavored",
+    "license": "GPL-3.0",
+    "dependencies": {
+        "vscode-languageserver": "^8.1.0",
+        "vscode-languageserver-textdocument": "^1.0.8"
+    }
+}

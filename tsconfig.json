@@ -1,13 +1,17 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
         "target": "es2020",
-        "lib": [
-            "es2020"
-        ],
-        "outDir": "out",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "lib": ["es2020"],
         "rootDir": "src",
+        "outDir": "out",
+        "sourceMap": true
     },
     "include": ["src"],
-    "exclude": ["node_modules"]
+    "exclude": ["node_modules"],
+    "references": [
+		{ "path": "./client" },
+		{ "path": "./server" }
+	]
 }

@@ -1,30 +1,27 @@
 {
     "name": "skript",
     "displayName": "Skript",
-    "version": "1.0.0",
-    "author": "AppleFlavored",
+    "version": "0.1.0",
+    "publisher": "AppleFlavored",
     "license": "GPL-3.0",
-    "main": "./out/extension",
+    "main": "./client/out/extension",
     "repository": {
         "type": "git",
-        "url": "https://github.com/AppleFlavored/skriptinsight-vscode.git"
-    },
-    "engines": {
-        "vscode": "^1.63.0"
+        "directory": "https://github.com/AppleFlavored/vscode-skript.git"
     },
     "scripts": {
         "vscode:prepublish": "yarn run compile",
         "compile": "tsc -b",
-        "watch": "tsc -b -w"
-    },
-    "dependencies": {
-        "jdk-utils": "^0.4.3",
-        "vscode-languageclient": "^8.0.1"
+        "watch": "tsc -b -w",
+        "postinstall": "cd client && yarn install && cd ../server && yarn install && cd .."
     },
     "devDependencies": {
-        "@types/node": "^17.0.43",
-        "@types/vscode": "^1.68.0",
-        "typescript": "^4.7.3"
+        "@types/node": "^18.7.13",
+        "@types/vscode": "^1.70.0",
+        "typescript": "^4.8.2"
+    },
+    "engines": {
+        "vscode": "^1.63.0"
     },
     "activationEvents": [
         "onLanguage:skript"
@@ -33,7 +30,9 @@
         "languages": [
             {
                 "id": "skript",
-                "aliases": ["Skript"],
+                "aliases": [
+                    "Skript"
+                ],
                 "extensions": [
                     ".sk"
                 ],
